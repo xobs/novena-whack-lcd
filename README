@@ -1,0 +1,4 @@
+novena-whack-lcd
+
+This program monitors the mainboard "User" button, and resets the LCD when
+pressed, to try and fix the brokenness.

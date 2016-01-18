@@ -1,0 +1,9 @@
+[Unit]
+Description=Reset LCD when User button is pressed
+
+[Service]
+Type=simple
+ExecStart=-/usr/sbin/novena-whack-lcd
+
+[Install]
+WantedBy=graphical.target

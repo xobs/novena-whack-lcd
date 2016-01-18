@@ -1,0 +1,17 @@
+Source: novena-whack-lcd
+Section: misc
+Priority: optional
+Maintainer: Sean Cross <xobs@kosagi.com>
+Build-Depends: debhelper (>= 9), dh-systemd (>= 1.3)
+Standards-Version: 3.9.6
+Homepage: http://kosagi.com
+Vcs-Git: git://github.com/xobs/novena-whack-lcd.git
+Vcs-Browser: http://github.com/xobs/novena-whack-lcd
+
+Package: novena-whack-lcd
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Reset LCD when User button is pressed
+ Work around a bug in the IPU, where the LCD comes up unstably.  This will
+ be fixed in a future kernel, but for now, work around the problem when
+ the button is pressed.

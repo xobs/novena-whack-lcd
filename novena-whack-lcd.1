@@ -1,0 +1,17 @@
+.TH NOVENA-WHACK-LC 1 "17 Jan 2016" Novena "Linux System Administration"
+.SH NAME
+novena-whack-lcd \- reset LCD when User button is pressed
+.SH SYNOPSIS
+.B novena-whack-lcd
+
+.SH DESCRIPTION
+.LP
+Due to a bug in the IPU, sometimes it comes up incorrectly.  A solution is
+to bring the IPU display interfaces down and up again.
+
+This program monitors the GPIO keys, and resets the display when a button
+is pressed.
+
+It is a hack.
+.SH AUTHORS
+Written by Sean Cross <xobs@kosagi.com>
